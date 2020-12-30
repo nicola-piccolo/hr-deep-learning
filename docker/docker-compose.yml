@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ml-environment-template:
+    image: ml-environment-template:latest
+    ports: 
+      - 8000:8000
+    volumes:
+      - ml-environment-template-logs:/var/log/ml-environment-template
+volumes:
+  ml-environment-template-logs:
